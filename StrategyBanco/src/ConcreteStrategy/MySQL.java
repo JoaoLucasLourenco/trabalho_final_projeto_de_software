@@ -26,7 +26,7 @@ public class MySQL implements IBancoDados {
             conn = DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/strategymysql",
                     "root",
-                    "admin"
+                    ""
             );
         }catch (SQLException ex ){
             System.err.println("Ocorreu um erro ao conectar com o banco" + ex.getMessage());

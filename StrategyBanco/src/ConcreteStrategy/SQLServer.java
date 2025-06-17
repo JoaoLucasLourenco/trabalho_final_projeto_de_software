@@ -24,7 +24,7 @@ public class SQLServer implements IBancoDados {
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             conn = DriverManager.getConnection(
-            	    "jdbc:sqlserver://localhost\\SQLEXPRESS;databaseName=master;integratedSecurity=true;encrypt=true;trustServerCertificate=true"
+            	    "jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=true;trustServerCertificate=true;integratedSecurity=true"
             	);
 
         } catch (SQLException ex) {
