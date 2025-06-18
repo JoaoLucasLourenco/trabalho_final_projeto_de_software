@@ -1,5 +1,3 @@
-package mainBanco;
-
 import java.util.Scanner;
 import ConcreteStrategy.MySQL;
 import ConcreteStrategy.SQLServer;

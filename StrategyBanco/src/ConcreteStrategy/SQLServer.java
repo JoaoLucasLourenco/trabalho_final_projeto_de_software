@@ -23,9 +23,12 @@ public class SQLServer implements IBancoDados {
     public void Instancia() {
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+
             conn = DriverManager.getConnection(
-            	    "jdbc:sqlserver://localhost:1433;databaseName=master;encrypt=true;trustServerCertificate=true;integratedSecurity=true"
-            	);
+                    "jdbc:sqlserver://desktop-f21h3qh\\hdner:1433;databaseName=sistema;integratedSecurity=true;encrypt=true;trustServerCertificate=true"
+            );
+
+
 
         } catch (SQLException ex) {
             System.err.println("Ocorreu um erro ao conectar com o banco: " + ex.getMessage());
